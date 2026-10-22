@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sixfolio | Portofolio Siswa Teknik Komputer dan Jaringan</title>
+  <meta name="description" content="Kumpulan portofolio enam siswa Kelompok 3 Kelas XII-TKJ 3, SMK Muhammadiyah 4 Jakarta.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { paper: '#F3F6F8', ink: '#14213D', cable: { orange: '#E8851C', blue: '#2F6FDE', green: '#2E9B5B' } },
+        fontFamily: { display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'], body: ['"Instrument Sans"', 'system-ui', 'sans-serif'] }
+      } }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Instrument Sans', system-ui, sans-serif; }
+    h1, h2, h3, .font-display { font-family: 'Bricolage Grotesque', system-ui, sans-serif; }
+    a:focus-visible { outline: 3px solid #2F6FDE; outline-offset: 3px; border-radius: 6px; }
+
+    .kartu { transition: transform .18s, box-shadow .18s, border-color .18s; }
+    .kartu:hover { transform: translateY(-4px); box-shadow: 0 12px 28px -12px rgba(20,33,61,.35); border-color: var(--c); }
+    .kartu:hover .lihat { color: var(--c); }
+    .kartu:hover .panah { transform: translateX(4px); }
+    .panah { transition: transform .18s; display: inline-block; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .kartu, .panah { transition: none; }
+      .kartu:hover, .kartu:hover .panah { transform: none; }
+    }
+  </style>
+</head>
+
+<body class="bg-paper text-ink antialiased">
+
+  <!-- NAVIGASI -->
+  <header class="bg-ink text-paper">
+    <nav class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between" aria-label="Navigasi utama">
+      <a href="#atas" class="font-display font-extrabold text-xl">sixfolio<span class="text-cable-orange">.my.id</span></a>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li><a class="hover:text-cable-orange" href="#anggota">Anggota</a></li>
+        <li><a class="hover:text-cable-orange" href="#tentang">Tentang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="atas" class="bg-ink text-paper">
+    <div class="max-w-5xl mx-auto px-5 pt-12 pb-16 md:pt-20 md:pb-24">
+      <h1 class="font-display font-extrabold text-4xl md:text-6xl leading-[1.05] tracking-tight max-w-3xl">
+        Portofolio Siswa Teknik Komputer dan Jaringan
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-paper/80 leading-relaxed max-w-2xl">
+        Kumpulan portofolio enam siswa Kelompok 3, Kelas XII-TKJ 3, SMK Muhammadiyah 4 Jakarta. Setiap portofolio memuat profil, keahlian, proyek, dan pengalaman Praktik Kerja Lapangan.
+      </p>
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="#anggota" class="bg-cable-orange text-ink font-semibold px-6 py-3 rounded-lg hover:bg-paper transition-colors">Lihat portofolio</a>
+        <a href="#tentang" class="font-semibold underline underline-offset-4 decoration-paper/40 hover:decoration-paper">Tentang kelompok</a>
+      </div>
+    </div>
+    <!-- tiga warna kabel UTP -->
+    <div class="flex h-1.5" aria-hidden="true">
+      <div class="flex-1 bg-cable-orange"></div><div class="flex-1 bg-cable-blue"></div><div class="flex-1 bg-cable-green"></div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ANGGOTA -->
+    <section id="anggota" class="max-w-5xl mx-auto px-5 py-16 md:py-20">
+      <h2 class="font-display font-bold text-3xl md:text-4xl">Anggota Kelompok 3</h2>
+      <p class="mt-3 text-ink/70 max-w-xl">Pilih salah satu anggota untuk membuka halaman portofolionya.</p>
+
+      <ul class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <li>
+          <a href="mukhlisul-amal/" style="--c:#E8851C" class="kartu block h-full bg-white border border-ink/10 rounded-2xl p-6">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-cable-orange text-ink font-display font-extrabold text-lg" aria-hidden="true">MA</span>
+            <span class="block mt-5 font-display font-bold text-xl leading-snug">Mukhlisul Amal</span>
+            <span class="lihat block mt-4 text-sm font-semibold text-ink/70">Lihat portofolio <span class="panah" aria-hidden="true">→</span></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="muhammad-farel-nurrizki/" style="--c:#2F6FDE" class="kartu block h-full bg-white border border-ink/10 rounded-2xl p-6">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-cable-blue text-white font-display font-extrabold text-lg" aria-hidden="true">MN</span>
+            <span class="block mt-5 font-display font-bold text-xl leading-snug">Muhammad Farel Nurrizki</span>
+            <span class="lihat block mt-4 text-sm font-semibold text-ink/70">Lihat portofolio <span class="panah" aria-hidden="true">→</span></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="alvi-aldiansyah/" style="--c:#2E9B5B" class="kartu block h-full bg-white border border-ink/10 rounded-2xl p-6">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-cable-green text-white font-display font-extrabold text-lg" aria-hidden="true">AA</span>
+            <span class="block mt-5 font-display font-bold text-xl leading-snug">Alvi Aldiansyah</span>
+            <span class="lihat block mt-4 text-sm font-semibold text-ink/70">Lihat portofolio <span class="panah" aria-hidden="true">→</span></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="ahmad-yasir-fatahilah/" style="--c:#E8851C" class="kartu block h-full bg-white border border-ink/10 rounded-2xl p-6">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-cable-orange text-ink font-display font-extrabold text-lg" aria-hidden="true">AF</span>
+            <span class="block mt-5 font-display font-bold text-xl leading-snug">Ahmad Yasir Fatahilah</span>
+            <span class="lihat block mt-4 text-sm font-semibold text-ink/70">Lihat portofolio <span class="panah" aria-hidden="true">→</span></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="aji-dwi-saiful-muttaqin/" style="--c:#2F6FDE" class="kartu block h-full bg-white border border-ink/10 rounded-2xl p-6">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-cable-blue text-white font-display font-extrabold text-lg" aria-hidden="true">AM</span>
+            <span class="block mt-5 font-display font-bold text-xl leading-snug">Aji Dwi Saiful Muttaqin</span>
+            <span class="lihat block mt-4 text-sm font-semibold text-ink/70">Lihat portofolio <span class="panah" aria-hidden="true">→</span></span>
+          </a>
+        </li>
+
+        <li>
+          <a href="hafiz-ashshidiq/" style="--c:#2E9B5B" class="kartu block h-full bg-white border border-ink/10 rounded-2xl p-6">
+            <span class="flex h-14 w-14 items-center justify-center rounded-full bg-cable-green text-white font-display font-extrabold text-lg" aria-hidden="true">HA</span>
+            <span class="block mt-5 font-display font-bold text-xl leading-snug">Hafiz Ashshidiq</span>
+            <span class="lihat block mt-4 text-sm font-semibold text-ink/70">Lihat portofolio <span class="panah" aria-hidden="true">→</span></span>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="bg-white border-y border-ink/10">
+      <div class="max-w-5xl mx-auto px-5 py-16 md:py-20 grid md:grid-cols-5 gap-10">
+        <div class="md:col-span-3">
+          <h2 class="font-display font-bold text-3xl md:text-4xl">Tentang kelompok</h2>
+          <p class="mt-5 text-lg leading-relaxed">
+            Kami adalah siswa Kelas XII jurusan Teknik Komputer dan Jaringan di SMK Muhammadiyah 4 Jakarta. Website ini menghimpun portofolio pribadi setiap anggota sebagai gambaran kompetensi, proyek praktik, dan pengalaman kerja yang telah kami jalani selama menempuh pendidikan kejuruan.
+          </p>
+        </div>
+
+        <dl class="md:col-span-2 space-y-4 border-l-4 border-cable-blue pl-5 self-start">
+          <div><dt class="text-sm text-ink/60">Jurusan</dt><dd class="font-semibold">Teknik Komputer dan Jaringan</dd></div>
+          <div><dt class="text-sm text-ink/60">Kelas</dt><dd class="font-semibold">XII-TKJ 3, Kelompok 3</dd></div>
+          <div><dt class="text-sm text-ink/60">Sekolah</dt><dd class="font-semibold">SMK Muhammadiyah 4 Jakarta</dd></div>
+          <div><dt class="text-sm text-ink/60">Jumlah anggota</dt><dd class="font-semibold">6 siswa</dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-ink text-paper/80">
+    <div class="max-w-5xl mx-auto px-5 py-8 text-sm flex flex-col sm:flex-row sm:justify-between gap-2">
+      <p>© 2026 Kelompok 3, XII-TKJ 3, SMK Muhammadiyah 4 Jakarta.</p>
+      <p>sixfolio.my.id</p>
+    </div>
+  </footer>
+
+</body>
+</html>
